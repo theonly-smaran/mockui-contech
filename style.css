@@ -13,6 +13,7 @@ body {
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
     font-size:30px;
+    margin-left:400px;
     font-weight: 600;
 }
 #pre-dom .nav-theme-color a {
@@ -33,7 +34,7 @@ body {
         #f3ec78, 
         #f5804e
         );
-    transition: ease 500ms;
+    transition: ease 1000ms;
     font-weight: 600;
     line-height: 0;
 }
@@ -44,7 +45,7 @@ body {
         #f5684c
         );
     font-size:85px;
-    font-weight:650;
+    font-weight:700;
 }
 #pre-dom #home p {
     color: #f5804e;
@@ -59,8 +60,8 @@ body {
     border-style: solid;
     border-color: #f5804e;
     padding-left:0px;
-    width:80%;
-    left:10%;
+    width:50%;
+    left:25%;
     height:10%;
     padding-top: 10px;
 }
@@ -77,38 +78,126 @@ body {
     position: relative;
     background-image: linear-gradient(
         to right,
-        #f6d670, 
-        #f5684c
+        #f3ec78, 
+        #f5804e
         );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
     width:40%;
     left:30%;
     padding: 10px 10px 10px 10px;
     border-radius: 20px;
     font-size:70px;
     font-weight: 700;
-    transition: ease 500ms;
+    margin-top:200px;
+    transition: ease-out 500ms;
 }
 #pre-dom #services .header-services:hover {
-    color:white !important;
     font-size:75px;
+    font-weight: 800;
 }
-#pre-dom #services .service-title {
-    margin-top: 50px;
-    color:white;
-    text-align: center;
-    font-size:45px;
+#pre-dom #services .header-services:before {
+    content:" ";
+    height: 2px;
+    width: 130px;
+    background: #f3672c;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
 }
-#pre-dom .carousel-inner p {
-    color:#f5684c;
-    font-weight: 500;
+#pre-dom #services .header-services:after {
+    content:" ";
+    height: 2px;
+    width: 130px;
+    background: #f3672c;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+#pre-dom .service-list {
+    margin-top:100px;
     text-align: center;
-    margin-top:40px;
+    display: flex;
+}
+#pre-dom .service-list p {
+    padding: 0px 100px 0px 100px;
     font-size:18px;
+    color:#dedede;
+    font-weight:600;
 }
-#pre-dom .carousel-item {
-    width:50%;
-    left:25%;
-    overflow:hidden;
+#pre-dom .firstservice-order {
+    border-style:solid;
+    border-width:3px;
+    border-radius:20px;
+    padding: 15px 0px 15px 0px;
+    margin-right: 100px;
+    height:700px;
+}
+#pre-dom .secondservice-order {
+    border-style:solid;
+    border-width:3px;
+    border-radius:20px;
+    padding: 15px 0px 15px 0px;
+    margin-right: 100px;
+}
+#pre-dom .thirdservice-order {
+    border-style:solid;
+    border-width:3px;
+    border-radius:20px;
+    padding: 15px 0px 15px 0px;
+}
+#pre-dom .navthick-weight {
+    font-weight: 400;
+}
+#pre-dom footer {
+    margin-top:150px;
+    color:#dedede;
+    text-align: center;
+}
+#pre-dom footer h6, span {
+    font-size:25px;
+    margin-bottom:50px;
+}
+#pre-dom footer span {
+    margin-left:40px;
+}
+#pre-dom footer a {
+    text-decoration: none;
+    color:#dedede;
+    transition: ease 600ms;
+}
+#pre-dom footer span a:hover {
+    text-decoration: none;
+    color:#ececec;
+    font-size:27px;
+}
+#pre-dom footer h6 a:hover {
+    text-decoration: none;
+    color:#ececec;
+    font-size:27px;
+}
+#pre-dom .contact-href {
+    background-image: linear-gradient(
+        to right,
+        #f3ec78, 
+        #f5804e
+        );
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    color:#2a2a2a !important;
+    font-weight:650;
+    margin-right: 400px;
+    transition: ease 600ms;
+}
+#pre-dom .contact-href:hover {
+    color:white !important;
+}
+#pre-dom footer .weight-text {
+    font-weight:500;
 }
 #pre-dom .primary-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245, 104, 76)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
